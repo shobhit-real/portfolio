@@ -11,4 +11,4 @@ A modern, responsive portfolio website built using React, HTML, Tailwind CSS, an
 - Resume download functionality
 - Clean and minimal design
 
-#### Hosted Link: 
+#### Hosted Link: https://shobhitb.tech
