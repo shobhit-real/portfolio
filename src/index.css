@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --first-color: hsl(149, 54%, 44%);
+  --black-color: hsl(0, 0%, 0%);
+  --black-color-light: #0e2622;
+  --white-color: hsl(0, 0%, 95%);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 64%);
+  --body-color: hsl(0, 0%, 87%);
+  --container-color: hsl(0, 0%, 83%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.shadow{
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+}
+
+.geometric-box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--first-color);
+  rotate: -30deg;
+}
+.geometric-box::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--black-color);
+  left: -4px;
+  top: -4px;
+}
+
+.infinite-scroll {
+  animation: scroll-down 3s infinite;
+}
+@keyframes scroll-down{
+  0%{
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0.6rem);
+    opacity: 0;
+  }
+}
+
+.heading::after {
+  content: "";
+  width: 40px;
+  height: 28px;
+  background-color: hsl(149, 54%, 44%, .2);
+  position: absolute;
+  top: -4px;
+  right: -8px;
+}
+
+.xyz::after {
+  top: initial;
+  bottom: -4px;
+}
+
+.about-desc::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: var(--title-color);
+  position: absolute;
+  left: -1.75rem;
+  top: .7rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading::after {
+    width: 66px;
+    height: 40px;
+  }
+
+  .geometric-box {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-desc::after {
+    width: 32px;
+    height: 2px;
+    left: -3rem;
+    top: 14px;
+  }
+}
