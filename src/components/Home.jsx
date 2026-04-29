@@ -18,7 +18,7 @@ const Home = () => {
         <div className='mx-6 grid gap-6 pt-24 max-[340px]:mx-4 sm:grid-cols-[350px] sm:justify-center lg:grid-cols-[repeat(2,460px)] lg:gap-y-8 lg:gap-x-4 xl:gap-x-16 lg:items-center lg:py-24 min-h-screen z-[10]'>
             <h1 className='home_title text-5xl text-center lg:text-7xl lg:text-left lg:self-end'>Shobhit</h1>
 
-            <div className='home_div relative justify-self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3'>
+            <div className='relative justify-self-center lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-3'>
                 <div className='w-56 max-[340px]:w-44 lg:w-[350px]'>
                     <img className='relative z-10' src="/assets/photo.jpeg" alt="" />
                     <div className='w-[100%] h-[100%] bg-[var(--container-color)] absolute -bottom-3 -right-3 border-4 border-black transition-[background-color] duration-[400ms] lg:-right-5 lg:-bottom-5 lg:border-[6px] z-[5]'></div>
