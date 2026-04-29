@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className='flex justify-between px-8 lg:text-base'>
                 <ul className='flex flex-col lg:flex-row justify-center gap-x-8 gap-y-1'>
                     <li className='text-white hover:text-[var(--text-color-light)] transition-colors duration-[400ms]'>
-                        <a href="">About</a>
+                        <a href="/#about">About</a>
                     </li>
                     <li className='text-white hover:text-[var(--text-color-light)] transition-colors duration-[400ms]'>
                         <a href="/dev-portfolio">Web Development</a>

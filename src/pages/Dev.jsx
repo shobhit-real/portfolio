@@ -47,16 +47,22 @@ const projects = [
     },
     {
         title: 'Portfolio',
-        desc: 'A responsive, web-based 3D animated portfolio built with React, Three.js, & Motion. This project showcases interactive 3D visuals, smooth animations, and a sleek, modern UI. Fully responsive, it adapts seamlessly to all screen sizes, offering an immersive and engaging user experience to highlight my skills and projects.',
+        desc: 'A modern, responsive portfolio website designed with smooth animations, a clean interface, and a strong focus on performance and user experience.',
         image: '/projects/portfolio.png',
         skills: [
             {
                 name: 'JavaScript', logo: 'ri-javascript-fill'
             },
             {
+                name: 'Tailwind CSS', logo: '/assets/tailwind.svg'
+            },
+            
+            {
                 name: 'React', logo: 'ri-reactjs-fill'
             }
-        ]
+        ],
+        github: 'https://github.com/shobhit-real/portfolio',
+        hosted: 'https://shobhitb.tech'
     },
 ]
 

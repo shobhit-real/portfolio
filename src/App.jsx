@@ -17,22 +17,31 @@ const App = () => {
   const { pathname, hash } = useLocation()
 
   useEffect(() => {
-    // Only run on homepage
-    if (pathname !== '/') {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-      return
-    }
+  // 🔹 Set dynamic title
+  const titles = {
+    "/dev-portfolio": "Web Development - Portfolio",
+    "/dva-portfolio": "Data Analytics - Portfolio",
+    "/aiml-portfolio": "AI & ML - Portfolio",
+  }
 
-    const id = hash ? hash.replace('#', '') : 'home'
-    const el = document.getElementById(id)
+  document.title = titles[pathname] || "Shobhit's Portfolio"
 
-    if (el) {
-      const yOffset = -80
-      const y = el.getBoundingClientRect().top + window.scrollY + yOffset
+  // 🔹 Your existing scroll logic
+  if (pathname !== '/') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    return
+  }
 
-      window.scrollTo({ top: y, behavior: 'smooth' })
-    }
-  }, [pathname, hash])
+  const id = hash ? hash.replace('#', '') : 'home'
+  const el = document.getElementById(id)
+
+  if (el) {
+    const yOffset = -80
+    const y = el.getBoundingClientRect().top + window.scrollY + yOffset
+
+    window.scrollTo({ top: y, behavior: 'smooth' })
+  }
+}, [pathname, hash])
 
   return (
     <>

@@ -30,7 +30,7 @@ const Navbar = () => {
             <header className={`fixed w-full top-0 left-0 bg-[var(--body-color)] z-[100] transition-shadow duration-[400ms] ${shadow ? 'shadow-[0_1px_16px_hsla(0,0%,0%,0.12)]' : ''}`}>
                 <nav className='relative mx-6 h-[var(--header-height)] lg:h-[calc(var(--header-height)+2rem)] lg:mx-10 flex justify-between items-center max-[340px]:mx-4'>
                     <a className='flex gap-2 items-center font-semibold text-black' href='/'>
-                        <span className='w-8 h-8 bg-black text-white grid gap-6 place-items-center rounded-full'>S</span>
+                        <img className='w-8 h-8 rounded-full' src='/assets/logo.jpg' />
                         <span className=''>Shobhit B.</span>
                     </a>
                     <div className={`${showMenu ? 'block' : 'max-lg:hidden'} max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:bg-black/75 max-lg:w-full max-lg:text-center max-lg:transition-[top] max-lg:duration-[400ms] max-sm:pt-7 max-lg:pb-16 backdrop-blur-[7px] lg:ml-auto`}>
